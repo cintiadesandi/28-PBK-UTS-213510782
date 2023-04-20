@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>TO-DO LIST</h1>
+    <h1>Daftar Tugas</h1>
     <form @submit.prevent="addActivity">
       <input type="text" v-model="newActivity" placeholder="Add activity...">
       <button>Add</button>
@@ -25,9 +25,9 @@ export default {
     return {
       newActivity: '',
       activities: [
-        { text: 'Buy groceries', completed: false },
-        { text: 'Finish homework', completed: true },
-        { text: 'Clean the house', completed: false }
+        { text: 'Makalah DAA', completed: false },
+        { text: 'UTS PBK', completed: true },
+        { text: 'Makalah Jarkom', completed: false }
       ],
       showUnfinished: false
     }
