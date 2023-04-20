@@ -4,7 +4,8 @@
     <form @submit.prevent="addActivity">
       <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...">
       <button>Tambah</button>
-    </form>
+    </form><br>
+    <table>
     <ul>
       <li v-for="(activity, index) in filteredActivities" :key="index" :class="{ done: activity.completed }">
         <input type="checkbox" v-model="activity.completed">
@@ -12,6 +13,7 @@
         <button @click="removeActivity(index)">Hapus</button>
       </li>
     </ul>
+    </table>
     <div>
       <label>Tampilkan Tugas yang Belum Selesai:</label>
       <input type="checkbox" v-model="showUnfinished">
