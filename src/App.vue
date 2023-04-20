@@ -25,9 +25,9 @@ export default {
     return {
       newActivity: '',
       activities: [
-        { text: 'Makalah DAA', completed: false }, <br>
-        { text: 'UTS PBK', completed: true }, <br>
-        { text: 'Makalah Jarkom', completed: false } <br>
+        { text: 'Makalah DAA', completed: false }, 
+        { text: 'UTS PBK', completed: true }, 
+        { text: 'Makalah Jarkom', completed: false } 
       ],
       showUnfinished: false
     }
