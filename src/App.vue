@@ -2,7 +2,7 @@
   <div>
     <h1>Daftar Tugas<p>&#9997;&#10071;</p></h1><hr><br>
     <form @submit.prevent="addActivity">
-      <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...<p>&#128516;&#9996;</p>">
+      <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...&#128516;&#9996;">
       <button>Tambah</button>
     </form><br>
     <table>
