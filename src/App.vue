@@ -1,19 +1,19 @@
 <template>
   <div>
-    <h1>Daftar Tugas</h1>
+    <h1>Daftar Tugas</h1><hr><br>
     <form @submit.prevent="addActivity">
-      <input type="text" v-model="newActivity" placeholder="Add activity...">
-      <button>Add</button>
+      <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...">
+      <button>Tambah</button>
     </form>
     <ul>
       <li v-for="(activity, index) in filteredActivities" :key="index" :class="{ done: activity.completed }">
         <input type="checkbox" v-model="activity.completed">
         <span>{{ activity.text }}</span>
-        <button @click="removeActivity(index)">Remove</button>
+        <button @click="removeActivity(index)">Hapus</button>
       </li>
     </ul>
     <div>
-      <label>Show only unfinished activities:</label>
+      <label>Tampilkan Tugas yang Belum Selesai:</label>
       <input type="checkbox" v-model="showUnfinished">
     </div>
   </div>
@@ -25,9 +25,9 @@ export default {
     return {
       newActivity: '',
       activities: [
-        { text: 'Makalah DAA', completed: false },
-        { text: 'UTS PBK', completed: true },
-        { text: 'Makalah Jarkom', completed: false }
+        { text: 'Makalah DAA', completed: false }, <br>
+        { text: 'UTS PBK', completed: true }, <br>
+        { text: 'Makalah Jarkom', completed: false } <br>
       ],
       showUnfinished: false
     }
