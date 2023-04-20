@@ -3,7 +3,7 @@
     <h1>Daftar Tugas</h1><hr><br>
     <form @submit.prevent="addActivity">
       <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...">
-      <button>Tambah</button><p>&#128516; &#270C</p>
+      <button>Tambah</button><p>&#128516; &#270C;</p>
     </form><br>
     <table>
     <ul>
