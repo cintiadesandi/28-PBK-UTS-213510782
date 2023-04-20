@@ -71,4 +71,7 @@ h1 {
 .addActivity {
   text-decoration-color: red;
 }
+input[type="checkbox"]::before {
+  background-color: CanvasText;
+}
 </style>
