@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Daftar Tugas</h1><hr><br>
+    <h1>Daftar Tugas</h1><p>&#9997;&#10071</p><hr><br>
     <form @submit.prevent="addActivity">
       <input type="text" v-model="newActivity" placeholder="Tambahkan Tugas...">
       <button>Tambah</button><p>&#128516;&#9996;</p>
